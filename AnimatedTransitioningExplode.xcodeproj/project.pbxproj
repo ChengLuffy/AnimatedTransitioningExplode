@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		2AE379CF1D55A3300020FA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE379CE1D55A3300020FA6B /* AppDelegate.swift */; };
-		2AE379D11D55A3300020FA6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE379D01D55A3300020FA6B /* ViewController.swift */; };
 		2AE379D41D55A3300020FA6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE379D21D55A3300020FA6B /* Main.storyboard */; };
 		2AE379D61D55A3300020FA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE379D51D55A3300020FA6B /* Assets.xcassets */; };
 		2AE379D91D55A3300020FA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE379D71D55A3300020FA6B /* LaunchScreen.storyboard */; };
+		2AE379E11D55A3570020FA6B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE379E01D55A3570020FA6B /* FirstViewController.swift */; };
+		2AE379E31D55A3640020FA6B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE379E21D55A3640020FA6B /* SecondViewController.swift */; };
+		2AE379E51D55A5370020FA6B /* ExplodeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE379E41D55A5370020FA6B /* ExplodeAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2AE379CB1D55A3300020FA6B /* AnimatedTransitioningExplode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedTransitioningExplode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE379CE1D55A3300020FA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2AE379D01D55A3300020FA6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2AE379D31D55A3300020FA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AE379D51D55A3300020FA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AE379D81D55A3300020FA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AE379DA1D55A3300020FA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AE379E01D55A3570020FA6B /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		2AE379E21D55A3640020FA6B /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2AE379E41D55A5370020FA6B /* ExplodeAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplodeAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				2AE379CE1D55A3300020FA6B /* AppDelegate.swift */,
-				2AE379D01D55A3300020FA6B /* ViewController.swift */,
+				2AE379E41D55A5370020FA6B /* ExplodeAnimator.swift */,
+				2AE379E01D55A3570020FA6B /* FirstViewController.swift */,
+				2AE379E21D55A3640020FA6B /* SecondViewController.swift */,
 				2AE379D21D55A3300020FA6B /* Main.storyboard */,
 				2AE379D51D55A3300020FA6B /* Assets.xcassets */,
 				2AE379D71D55A3300020FA6B /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE379D11D55A3300020FA6B /* ViewController.swift in Sources */,
+				2AE379E51D55A5370020FA6B /* ExplodeAnimator.swift in Sources */,
+				2AE379E31D55A3640020FA6B /* SecondViewController.swift in Sources */,
 				2AE379CF1D55A3300020FA6B /* AppDelegate.swift in Sources */,
+				2AE379E11D55A3570020FA6B /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +260,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnimatedTransitioningExplode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChengLuffy.AnimatedTransitioningExplode;
+				PRODUCT_BUNDLE_IDENTIFIER = luffy.learning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -263,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AnimatedTransitioningExplode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ChengLuffy.AnimatedTransitioningExplode;
+				PRODUCT_BUNDLE_IDENTIFIER = luffy.learning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -289,6 +303,7 @@
 				2AE379DF1D55A3300020FA6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
